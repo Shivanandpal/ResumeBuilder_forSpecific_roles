@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #5b84a1;
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.header p {
+    margin: 5px 0 0;
+}
+
+/* Layout */
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.left {
+    width: 30%;
+    background-color: #d6e3ef;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.right {
+    width: 70%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+h3 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+.project {
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>{{name}}</h1>
+    <p>{{role}}</p>
+</div>
+
+<table class="main-table">
+<tr>
+
+<!-- LEFT SIDE -->
+<td class="left">
+    <h3>DETAILS</h3>
+    <p><b>Email:</b> {{email}}</p>
+    <p><b>Phone:</b> {{phone}}</p>
+    <p><b>Address:</b> {{address}}</p>
+
+    <h3>SKILLS</h3>
+    <ul class="skills">
+        {{skills}}
+    </ul>
+
+    <h3>LANGUAGES</h3>
+    <p>English</p>
+    <p>Hindi</p>
+</td>
+
+<!-- RIGHT SIDE -->
+<td class="right">
+
+    <h3>SUMMARY</h3>
+    {{summary}}
+
+    <h3>EXPERIENCE</h3>
+    {{experience}}
+
+    <h3>PROJECTS</h3>
+    {{projects}}
+
+    <h3>EDUCATION</h3>
+    {{education}}
+
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
